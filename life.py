@@ -20,6 +20,8 @@ def main(stepTime=0.1, width=50, height=50):
                               SDL_WINDOW_SHOWN)
     renderer = SDL_CreateRenderer(window, -1, 0)
 
+    SDL_ShowCursor(False)
+
     SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_BLEND)
 
     # If you want fullscreen, borderless
